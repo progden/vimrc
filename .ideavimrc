@@ -39,18 +39,26 @@ sethandler <C-P> a:ide
 sethandler <C-V> a:vim
 sethandler <C-[> a:ide
 sethandler <C-]> a:ide
+sethandler <C-;> a:ide
+sethandler <C-S-;> a:ide
+sethandler <C-G> a:ide
+sethandler <C-I> a:ide
+sethandler <C-Y> a:ide
+
 
 nmap gc <action>(GotoClass)
 nmap gi <action>(ReSharperGotoImplementation)
+nmap gi <action>(GotoImplementation)
 nmap gd <action>(GotToDeclaration)
 nmap gp <action>(GotToSuperMethod)
 nmap gt <action>(GotoTest)
-nmap gj <action>(Back)
-nmap gk <action>(Forward)
+nmap gk <action>(Back)
+nmap gj <action>(Forward)
 
 "unmap <Tab>
 "map <Tab> <action>(EditorIndentSelection)
 
+"IdeaVimExtension
 "開啟輸入法自動切換功能
 :set keep-english-in-normal
 "回到insert模式時恢復輸入法
