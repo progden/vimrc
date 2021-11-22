@@ -50,3 +50,8 @@ nmap gk <action>(Forward)
 
 "unmap <Tab>
 "map <Tab> <action>(EditorIndentSelection)
+
+"開啟輸入法自動切換功能
+:set keep-english-in-normal
+"回到insert模式時恢復輸入法
+:set keep-english-in-normal-and-restore-in-insert 
