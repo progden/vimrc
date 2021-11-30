@@ -5,7 +5,7 @@ set showcmd
 
 
 Plug 'easymotion/vim-easymotion'
-Plug 'tpope/vim-surround'
+"Plug 'tpope/vim-surround'
 Plug 'vim-scripts/argtextobj.vim'
 Plug 'dbakker/vim-paragraph-motion'
 Plug 'michaeljsmith/vim-indent-object'
@@ -64,7 +64,7 @@ nmap gmj <action>(MethodDown)
 nmap gwk <action>(PreviousWindow)
 nmap gwj <action>(NextWindow)
 
-vnoremap S <action>(SurroundWith)
+vmap S <action>(SurroundWith)
 
 "unmap <Tab>
 "map <Tab> <action>(EditorIndentSelection)
