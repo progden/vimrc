@@ -31,6 +31,7 @@ sethandler <C-]> a:ide
 sethandler <C-A> a:vim
 sethandler <C-C> a:ide
 sethandler <C-D> a:ide
+sethandler <C-E> a:ide
 sethandler <C-F> a:ide
 sethandler <C-G> a:ide
 sethandler <C-I> a:ide
@@ -43,8 +44,9 @@ sethandler <C-P> a:ide
 sethandler <C-R> a:ide
 sethandler <C-S-;> a:ide
 sethandler <C-S> a:ide
+sethandler <C-T> a:ide
 sethandler <C-U> a:ide
-sethandler <C-V> a:vim
+sethandler <C-V> a:ide
 sethandler <C-W> a:ide
 sethandler <C-X> a:vim
 sethandler <C-Y> a:ide
@@ -58,11 +60,13 @@ nmap gp <action>(GotToSuperMethod)
 nmap gt <action>(GotoTest)
 nmap gk <action>(Back)
 nmap gj <action>(Forward)
+" reference
+nmap gr <action>(FindUsages)
 
 nmap gmk <action>(MethodUp)
 nmap gmj <action>(MethodDown)
-nmap gwk <action>(PreviousWindow)
-nmap gwj <action>(NextWindow)
+"nmap gwk <action>(PreviousWindow)
+"nmap gwj <action>(NextWindow)
 
 vmap S <action>(SurroundWith)
 
@@ -73,4 +77,4 @@ vmap S <action>(SurroundWith)
 "開啟輸入法自動切換功能
 :set keep-english-in-normal
 "回到insert模式時恢復輸入法
-:set keep-english-in-normal-and-restore-in-insert 
+:set keep-english-in-normal-and-restore-in-insert
