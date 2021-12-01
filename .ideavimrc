@@ -63,10 +63,10 @@ nmap gj <action>(Forward)
 " reference
 nmap gr <action>(FindUsages)
 
-nmap gmk <action>(MethodUp)
-nmap gmj <action>(MethodDown)
-"nmap gwk <action>(PreviousWindow)
-"nmap gwj <action>(NextWindow)
+nmap <A-K> <action>(MethodUp)
+nmap <A-J> <action>(MethodDown)
+nmap <A-H> <action>(PreviousTab)
+nmap <A-L> <action>(NextTab)
 
 vmap S <action>(SurroundWith)
 
