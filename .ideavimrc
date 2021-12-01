@@ -2,11 +2,13 @@ set number
 set relativenumber
 set showmode
 set showcmd
+"set surround
+set argtextobj
 
 
 Plug 'easymotion/vim-easymotion'
 "Plug 'tpope/vim-surround'
-Plug 'vim-scripts/argtextobj.vim'
+"Plug 'vim-scripts/argtextobj.vim'
 Plug 'dbakker/vim-paragraph-motion'
 Plug 'michaeljsmith/vim-indent-object'
 
@@ -24,7 +26,6 @@ set hlsearch
 nnoremap <Leader>sc :nohlsearch<CR>
 inoremap <Leader>sc <Esc>:nohlsearch<CR>
 
-sethandler <C-;> a:ide
 sethandler <C-;> a:ide
 sethandler <C-[> a:ide
 sethandler <C-]> a:ide
@@ -67,6 +68,8 @@ nmap <A-K> <action>(MethodUp)
 nmap <A-J> <action>(MethodDown)
 nmap <A-H> <action>(PreviousTab)
 nmap <A-L> <action>(NextTab)
+"nmap gwk <action>(PreviousWindow)
+"nmap gwj <action>(NextWindow)
 
 vmap S <action>(SurroundWith)
 
