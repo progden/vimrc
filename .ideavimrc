@@ -54,7 +54,9 @@ sethandler <C-Y> a:ide
 
 
 nmap gc <action>(GotoClass)
-nmap gi <action>(ReSharperGotoImplementation)
+" for Rider only
+"nmap gi <action>(ReSharperGotoImplementation)
+" for IntelliJ only
 nmap gi <action>(GotoImplementation)
 nmap gd <action>(GotToDeclaration)
 nmap gp <action>(GotToSuperMethod)
