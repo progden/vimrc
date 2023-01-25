@@ -4,13 +4,14 @@ set showmode
 set showcmd
 "set surround
 set argtextobj
+" 系統剪貼簿
+set clipboard+=unnamed
 
-
-Plug 'easymotion/vim-easymotion'
+"Plug 'easymotion/vim-easymotion'
 "Plug 'tpope/vim-surround'
 "Plug 'vim-scripts/argtextobj.vim'
-Plug 'dbakker/vim-paragraph-motion'
-Plug 'michaeljsmith/vim-indent-object'
+"Plug 'dbakker/vim-paragraph-motion'
+"Plug 'michaeljsmith/vim-indent-object'
 
 "設定前贅詞
 let mapleader=','
@@ -29,15 +30,18 @@ inoremap <Leader>sc <Esc>:nohlsearch<CR>
 sethandler <C-;> a:ide
 sethandler <C-[> a:ide
 sethandler <C-]> a:ide
-sethandler <C-A> a:vim
+sethandler <C-A> a:vim  " increase number
+sethandler <C-B> a:ide
 sethandler <C-C> a:ide
 sethandler <C-D> a:ide
 sethandler <C-E> a:ide
 sethandler <C-F> a:ide
 sethandler <C-G> a:ide
+sethandler <C-H> a:ide
 sethandler <C-I> a:ide
 sethandler <C-J> a:ide
 sethandler <C-K> a:ide
+sethandler <C-L> a:ide
 sethandler <C-M> a:ide
 sethandler <C-N> a:ide
 sethandler <C-O> a:ide
@@ -47,29 +51,30 @@ sethandler <C-S-;> a:ide
 sethandler <C-S> a:ide
 sethandler <C-T> a:ide
 sethandler <C-U> a:ide
-sethandler <C-V> a:ide
+sethandler <C-V> a:vim  " visual mode (block)
 sethandler <C-W> a:ide
-sethandler <C-X> a:vim
+sethandler <C-X> a:vim  " decrease number
 sethandler <C-Y> a:ide
+sethandler <C-Z> a:ide  " undo
 
 
 nmap gc <action>(GotoClass)
 " for Rider only
 "nmap gi <action>(ReSharperGotoImplementation)
 " for IntelliJ only
-nmap gi <action>(GotoImplementation)
+"nmap gi <action>(GotoImplementation)
 nmap gd <action>(GotToDeclaration)
 nmap gp <action>(GotToSuperMethod)
 nmap gt <action>(GotoTest)
-"nmap gk <action>(MethodUp)
-"nmap gj <action>(MethodDown)
+nmap gk <action>(MethodUp)
+nmap gj <action>(MethodDown)
 " reference
 nmap gr <action>(FindUsages)
 
 nmap <A-K> <action>(Back)
 nmap <A-J> <action>(Forward)
-"nmap <A-H> <action>(PreviousTab)
-"nmap <A-L> <action>(NextTab)
+nmap <A-H> <action>(PreviousTab)
+nmap <A-L> <action>(NextTab)
 "nmap gwk <action>(PreviousWindow)
 "nmap gwj <action>(NextWindow)
 
