@@ -6,6 +6,7 @@ set showcmd
 set argtextobj
 " 系統剪貼簿
 set clipboard+=unnamed
+set visualbell
 
 "Plug 'easymotion/vim-easymotion'
 "Plug 'tpope/vim-surround'
